@@ -265,16 +265,6 @@ input, select, textarea {
 			overflow-x: auto;
 		}
 
-	hr {
-		border: 0;
-		border-bottom: solid 2px;
-		margin: 3rem 0;
-	}
-
-		hr.major {
-			margin: 5rem 0;
-		}
-
 	.align-left {
 		text-align: left;
 	}
@@ -2945,40 +2935,8 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
 			text-align: center;
 		}
-
-			header.major > :last-child {
-				margin-bottom: 0;
-			}
-
-			header.major > p {
-				margin-top: 0;
-				text-align: center;
-			}
-
-			header.major > .date {
-				font-size: 1rem;
-				margin: 0 0 4rem 0;
-			}
-
-				header.major > .date:before, header.major > .date:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 50%;
-					width: calc(50% - 6rem);
-					border-top: solid 2px;
-				}
-
-				header.major > .date:before {
-					left: 0;
-				}
-
-				header.major > .date:after {
-					right: 0;
-				}
 
 		@media screen and (max-width: 980px) {
 
@@ -2987,18 +2945,6 @@ input, select, textarea {
 			}
 
 		}
-
-		@media screen and (max-width: 736px) {
-
-			header.major {
-				margin: 0 0 2rem 0;
-			}
-
-		}
-
-	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
-	}
 
 /* Table */
 
@@ -3782,16 +3728,6 @@ input, select, textarea {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
 
-			#main > .post header.major > .date {
-				margin-top: -2rem;
-			}
-
-			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
-				line-height: 1.1;
-				margin: 0 0 2rem 0;
-			}
-
 			#main > .post.featured {
 				text-align: center;
 			}
@@ -3809,17 +3745,6 @@ input, select, textarea {
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
 				}
-
-					#main > .post header.major > .date {
-						margin-top: -1rem;
-						margin-bottom: 2rem;
-					}
-
-					#main > .post header.major > h1, #main > .post header.major h2 {
-						font-size: 2.5rem;
-						line-height: 1.2;
-						margin: 0 0 1.5rem 0;
-					}
 
 			}
 
@@ -3944,6 +3869,68 @@ input, select, textarea {
 			}
 
 		}
+
+/* Skills*/
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.inner {
+		padding-top: 20px;
+	}
+	.header {
+		text-align: center;
+
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		grid-gap: 1rem;
+		padding: 1rem 80px;
+		font-size: 1.2rem;
+	}
+
+	.skill-box{
+		padding: 1rem;
+		
+	}
+
+	.skill-title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0.5rem;
+		margin-bottom: 0.5rem;
+		transition: 0.5s;
+	}
+
+	.img{
+		width: 90px;
+		height: 90px;
+		position: relative;
+		border-radius: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skill-icon{
+		width: 100px;
+		
+	}
+
+	.skill-hover:hover{
+		transform: scale(1.3);
+		z-index: 2;
+	}
+
+	
 
 /* Footer */
 
@@ -4128,10 +4115,6 @@ input, select, textarea {
 
 		#footer ul.icons.alt li a.icon:hover:before {
 			box-shadow: inset 0 0 0 2px #18bfef;
-		}
-
-		#footer header.major .date:before, #footer header.major .date:after {
-			border-top-color: #e2e2e2;
 		}
 
 		#footer table tbody tr {
