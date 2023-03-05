@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2828,7 +2829,7 @@ input, select, textarea {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2rem 0;
+		margin: 0 0 3rem 0;
 		padding-left: 1.25rem;
 	}
 
@@ -2838,8 +2839,9 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 3rem 0;
 		padding-left: 1rem;
+		white-space: normal;
 	}
 
 		ul li {
@@ -3654,6 +3656,11 @@ input, select, textarea {
 
 		}
 
+		#main .project-icon {
+			width: 50px;
+			height: 50px;
+		}
+
 /* Skills*/
 	*{
 		padding: 0;
@@ -3682,7 +3689,6 @@ input, select, textarea {
 
 	.skill-box{
 		padding: 1rem;
-		
 	}
 
 	.skill-title{
@@ -3717,11 +3723,11 @@ input, select, textarea {
 
 	
 /* Education */
+	
 	.block{
 		display: flex;
-		padding-left: 25%;
+		padding-left: 10%;
 		line-height: 0;
-		
 	}
 	.section-title{
 		text-align: center;
@@ -3734,8 +3740,10 @@ input, select, textarea {
 	}
 	.block p{
 		font-size: 15px;
+
 	}
 	.block li{
+		line-height: 1.5;
 		font-size: 15px;
 		margin-top: -5px;
 	}
